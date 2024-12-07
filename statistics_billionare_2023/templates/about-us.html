@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}about-us page{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2{
+            color: white;
+        }
+        h3{
+        color: black;
+        }
+         p {
+            color: white;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        .team-member {
+            flex: 1 1 calc(33.333% - 1rem);
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Vision</h1>
+        <h2>
+
+To be the leading platform for insights, inspiration, and in-depth information on the world’s most successful individuals, empowering users to learn, grow, and achieve extraordinary success.
+</h2>
+        <h1>Mission</h1>
+<h2>
+
+To provide accurate, engaging, and inspiring content about billionaires, their journeys, and their impact on the world, fostering a community of aspirational thinkers and future changemakers.
+</h2>
+    </section>
+    <section>
+        <h2>Contact US</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Rakesh.jpg')}}" alt="Team Leader">
+                <h3>Name : Rakesh V</h3>
+                <h3>Team Leader</h3>
+                <h3>Mobile-no : <underline>+91 9353975261</underline> </h3>
+              <h3>Email : ry352004@gmail.com</h3>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Raghu.jpg')}}" alt="Team Leader">
+                <h3>Name : Raghu K</h3>
+                <h3>Team Member</h3>
+                <h3>Mobile-no : <underline>+91 8073090366</underline> </h3>
+              <h3>Email : raghurk090@gmail.com</h3>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Prajwal.jpg')}}" alt="Team Leader">
+
+                <h3>Name : Prajwal Koushik C </h3>
+                <h3>Team Member</h3>
+                <h3>Mobile-no : <underline>+91 8864531129</underline> </h3>
+              <h3>Email : prajwalkoushik27@gmail.com</h3>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Mahalakshmi.jpg')}}" alt="Team Leader">
+                <h3>Name : Mahalakshmi PS</h3>
+                <h3>Team Member</h3>
+                <h3>Mobile-no : <underline>+91 9901654281</underline> </h3>
+              <h3>Email : mahareddy.544@gmail.com</h3>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+{% endblock %}
